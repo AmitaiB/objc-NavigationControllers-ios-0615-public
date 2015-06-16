@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TeamMember.h"
 
 @interface TeamDetailViewController : UIViewController
+@property (nonatomic, weak) TeamMember *teamMember;
+
+
 
 @end

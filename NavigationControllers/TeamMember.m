@@ -28,6 +28,10 @@
     return self;
 }
 
+-(instancetype)initWithName:(NSString *)name image:(UIImage *)image {
+    return [self initWithName:name phoneNumber:@"" birthCity:@"" birthState:@"" favoriteBand:@"" image:image];
+}
+
 -(instancetype)init {
     return [self initWithName:@"" phoneNumber:@"" birthCity:@"" birthState:@"" favoriteBand:@"" image:nil];
 }

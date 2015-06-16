@@ -28,9 +28,19 @@
     // Dispose of any resources that can be recreated.
 }
 
--(TeamMember *)teamMemberForSegueIdentifier
+-(TeamMember *)teamMemberForSegueIdentifier:(NSString *)identifier
 {
+    TeamMember *joe     = [[TeamMember alloc] initWithName:@"Joe" image:[UIImage imageNamed:@"joe.jpg"]];
+    TeamMember *chris   = [[TeamMember alloc] initWithName:@"Chris" image:[UIImage imageNamed:@"chris.jpg"]];
+    TeamMember *avi     = [[TeamMember alloc] initWithName:@"Avi" image:[UIImage imageNamed:@"avi.jpg"]];
+    TeamMember *al      = [[TeamMember alloc] initWithName:@"Al" image:[UIImage imageNamed:@"al.jpg"]];
     
+    NSDictionary *teamMembers = @{  @"joe":joe,
+                                    @"chris":chris,
+                                    @"avi":avi,
+                                    @"al":al    };
+    
+    return teamMembers[identifier];
 }
 
 #pragma mark - Navigation
@@ -39,9 +49,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     TeamDetailViewController *destination = segue.destinationViewController;
-
+    TeamMember *tappedTeamMember = [self teamMemberForSegueIdentifier:segue.identifier];
     
-    NSLog(@"Prepare for segue.");
+    NSLog(@"prepareForSegue from %@", segue.identifier);
+    
+    destination.teamMember = tappedTeamMember;
 }
 
 

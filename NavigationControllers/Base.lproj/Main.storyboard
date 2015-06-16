@@ -57,7 +57,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mKz-5K-FLT" kind="push" identifier="ghandi" id="Azl-ak-DaI"/>
+                                    <segue destination="mKz-5K-FLT" kind="push" identifier="joe" id="Azl-ak-DaI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -148,6 +148,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="mZt-z7-jmo"/>
+        <segue reference="Azl-ak-DaI"/>
     </inferredMetricsTieBreakers>
 </document>

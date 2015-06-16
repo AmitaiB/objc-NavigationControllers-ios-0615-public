@@ -26,6 +26,8 @@
                favoriteBand:(NSString*)favoriteBand
                       image:(UIImage*)image;
 
+-(instancetype)initWithName:(NSString *)name image:(UIImage *)image;
+
 -(instancetype)init;
 
 @end
