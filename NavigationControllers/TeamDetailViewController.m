@@ -19,9 +19,9 @@
     [super viewDidLoad];
     self.nameLabel.text = self.teamMember.name;
     self.phoneNumberLabel.text = self.teamMember.phoneNumber;
-    self.birthCityAndStateLabel.text = [NSString stringWithFormat:(@"%@, %@", self.teamMember.birthCity, self.teamMember.birthState)];
+    self.birthCityAndStateLabel.text = [NSString stringWithFormat:@"%@, %@", self.teamMember.birthCity, self.teamMember.birthState];
     self.favoriteBandLabel.text = self.teamMember.favoriteBand;
-    self.imageView = self.teamMember.image;
+    self.imageView.image = self.teamMember.image;
     
 }
 

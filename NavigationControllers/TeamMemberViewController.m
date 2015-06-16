@@ -30,10 +30,10 @@
 
 -(TeamMember *)teamMemberForSegueIdentifier:(NSString *)identifier
 {
-    TeamMember *joe     = [[TeamMember alloc] initWithName:@"Joe" image:[UIImage imageNamed:@"joe.jpg"]];
-    TeamMember *chris   = [[TeamMember alloc] initWithName:@"Chris" image:[UIImage imageNamed:@"chris.jpg"]];
-    TeamMember *avi     = [[TeamMember alloc] initWithName:@"Avi" image:[UIImage imageNamed:@"avi.jpg"]];
-    TeamMember *al      = [[TeamMember alloc] initWithName:@"Al" image:[UIImage imageNamed:@"al.jpg"]];
+    TeamMember *joe = [[TeamMember alloc] initWithName:@"Joe" phoneNumber:@"8675309" birthCity:@"Nashville" birthState:@"TN" favoriteBand:@"Arrested Development" image:[UIImage imageNamed:@"joe.jpg"]];
+    TeamMember *chris = [[TeamMember alloc] initWithName:@"Chris" phoneNumber:@"2121234567" birthCity:@"New York" birthState:@"NY" favoriteBand:@"Red Hot Chili Peppers" image:[UIImage imageNamed:@"chris.jpg"]];
+    TeamMember *avi = [[TeamMember alloc] initWithName:@"Avi" phoneNumber:@"7185550000" birthCity:@"Riverdale" birthState:@"NY" favoriteBand:@"The Offspring" image:[UIImage imageNamed:@"avi.jpg"]];
+    TeamMember *al = [[TeamMember alloc] initWithName:@"Al" phoneNumber:@"5551212" birthCity:@"Detroit" birthState:@"MI" favoriteBand:@"The Beatles" image:[UIImage imageNamed:@"al.jpg"]];
     
     NSDictionary *teamMembers = @{  @"joe":joe,
                                     @"chris":chris,
