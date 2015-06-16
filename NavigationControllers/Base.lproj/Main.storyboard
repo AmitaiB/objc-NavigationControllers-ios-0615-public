@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="R1u-k6-DuK">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Team Member View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="TeamMemberViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kI8-OC-IwE"/>
                         <viewControllerLayoutGuide type="bottom" id="SnP-LE-5rS"/>
@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-Hu-ybb">
-                                <rect key="frame" x="24" y="138" width="110" height="120"/>
-                                <accessibility key="accessibilityConfiguration" label="alImage"/>
-                                <state key="normal" backgroundImage="al.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUU-Aq-7b6">
                                 <rect key="frame" x="174" y="138" width="110" height="120"/>
                                 <accessibility key="accessibilityConfiguration" label="joeImage"/>
@@ -31,6 +24,9 @@
                                 <state key="normal" backgroundImage="joe.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mKz-5K-FLT" kind="push" id="mZt-z7-jmo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-yK-Br8">
                                 <rect key="frame" x="174" y="308" width="110" height="120"/>
@@ -39,6 +35,9 @@
                                 <state key="normal" backgroundImage="avi.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mKz-5K-FLT" kind="push" id="BCX-3B-PXz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqs-U2-von">
                                 <rect key="frame" x="24" y="308" width="110" height="120"/>
@@ -47,6 +46,19 @@
                                 <state key="normal" backgroundImage="chris.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mKz-5K-FLT" kind="push" id="0RD-Mr-mZV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-Hu-ybb">
+                                <rect key="frame" x="24" y="138" width="110" height="120"/>
+                                <accessibility key="accessibilityConfiguration" label="alImage"/>
+                                <state key="normal" backgroundImage="al.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mKz-5K-FLT" kind="push" identifier="ghandi" id="Azl-ak-DaI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -55,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="491" y="99"/>
+            <point key="canvasLocation" x="310" y="64"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mwV-A3-UA3">
@@ -103,7 +115,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80I-JA-Vhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="99"/>
+            <point key="canvasLocation" x="753" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Cf-5L-zj0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R1u-k6-DuK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MdR-Co-yTH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Q6c-0K-uGi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8I-gX-Urb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="64"/>
         </scene>
     </scenes>
     <resources>
@@ -117,4 +147,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="mZt-z7-jmo"/>
+    </inferredMetricsTieBreakers>
 </document>
