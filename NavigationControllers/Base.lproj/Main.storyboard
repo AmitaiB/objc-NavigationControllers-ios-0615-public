@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="310" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Team Detail View Controller-->
         <scene sceneID="mwV-A3-UA3">
             <objects>
-                <viewController id="mKz-5K-FLT" sceneMemberID="viewController">
+                <viewController id="mKz-5K-FLT" customClass="TeamDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xRX-zw-Rpb"/>
                         <viewControllerLayoutGuide type="bottom" id="F21-Po-pe8"/>
