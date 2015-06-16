@@ -12,6 +12,11 @@
 @interface TeamDetailViewController : UIViewController
 @property (nonatomic, weak) TeamMember *teamMember;
 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *birthCityAndStateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *favoriteBandLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

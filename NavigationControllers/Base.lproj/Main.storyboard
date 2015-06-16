@@ -108,14 +108,27 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Beatles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxg-5P-fBW">
+                                <rect key="frame" x="56" y="403" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4af-HY-tdv"/>
+                    <connections>
+                        <outlet property="birthCityAndStateLabel" destination="AUo-h2-VFS" id="Op0-aU-zcI"/>
+                        <outlet property="favoriteBandLabel" destination="Sxg-5P-fBW" id="mTD-IF-4vE"/>
+                        <outlet property="imageView" destination="UfY-cI-eh3" id="sxS-Pf-CNd"/>
+                        <outlet property="nameLabel" destination="bqA-LW-Bdw" id="TMY-E4-0tb"/>
+                        <outlet property="phoneNumberLabel" destination="Uag-Kv-B1M" id="QFA-lR-IMB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80I-JA-Vhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="64"/>
+            <point key="canvasLocation" x="732" y="64"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Cf-5L-zj0">

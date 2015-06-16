@@ -17,8 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.nameLabel.text = self.teamMember.name;
+    self.phoneNumberLabel.text = self.teamMember.phoneNumber;
+    self.birthCityAndStateLabel.text = [NSString stringWithFormat:(@"%@, %@", self.teamMember.birthCity, self.teamMember.birthState)];
+    self.favoriteBandLabel.text = self.teamMember.favoriteBand;
+    self.imageView = self.teamMember.image;
+    
 }
+
+//-(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+//
+//    
+//    
+//    
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -34,5 +46,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
 
 @end
